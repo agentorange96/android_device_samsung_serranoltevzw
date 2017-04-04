@@ -29,13 +29,13 @@ endif
 -include device/samsung/serrano-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := serranolteusc,R890,SCH-R890
+TARGET_OTA_ASSERT_DEVICE := serranoltevzw,i435L,SCH-i435L
 
 # Inherit from proprietary vendor
--include vendor/samsung/serranolteusc/BoardConfigVendor.mk
+-include vendor/samsung/serranoltevzw/BoardConfigVendor.mk
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8930_serrano_usc_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8930_serrano_vzw_defconfig
 
 # NFC
 BOARD_HAVE_NFC := true
@@ -44,9 +44,9 @@ BOARD_HAVE_NFC := true
 BOARD_HAVE_MULTI_COLOR_LED := true
 
 # Custom RIL class
-BOARD_RIL_CLASS := ../../../device/samsung/serranolteusc/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/serranoltevzw/ril/
 
 ifeq ($(WITH_TWRP),true)
-   TARGET_RECOVERY_DEVICE_DIRS += device/samsung/serranolteusc
-   TARGET_RECOVERY_FSTAB += device/samsung/serranolteusc/rootdir/twrp.fstab
+   TARGET_RECOVERY_DEVICE_DIRS += device/samsung/serranoltevzw
+   TARGET_RECOVERY_FSTAB += device/samsung/serranoltevzw/rootdir/twrp.fstab
 endif
