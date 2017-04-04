@@ -1,4 +1,4 @@
-android_device_samsung_serranolteusc
+android_device_samsung_serranoltevzw
 ====================================
 
 To build TWRP Recovery:
