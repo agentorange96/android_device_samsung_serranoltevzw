@@ -37,7 +37,7 @@ import com.android.internal.telephony.cdma.SignalToneUtil;
 import android.os.SystemProperties;
 
 /**
- * RIL customization for Galaxy S4 Mini (LTE USC) device
+ * RIL customization for Galaxy S4 Mini (SCH-i435L) device
  *
  * {@hide}
  */
