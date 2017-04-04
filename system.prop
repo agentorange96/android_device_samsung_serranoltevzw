@@ -1,4 +1,4 @@
-# system.prop for serranolteusc
+# system.prop for serranoltevzw
 #
 
 rild.libpath=/system/lib/libsec-ril.so
@@ -6,23 +6,25 @@ rild.libargs=-d /dev/smd0
 
 telephony.lteOnCdmaDevice=1
 telephony.sms.pseudo_multipart=1
-ro.telephony.default_network=8
+ro.telephony.default_network=4
 persist.radio.no_wait_for_card=1
 persist.radio.snapshot_enabled=1
 persist.radio.snapshot_timer=22
 persist.eons.enabled=false
 persist.radio.use_se_table_only=1
-#ro.cdma.default_numeric=311220
-#ro.cdma.default_alpha=U.S. Cellular
-ro.cdma.home.operator.alpha=U.S. Cellular
-ro.cdma.home.operator.numeric=311220
-gsm.operator.numeric=311580
+#ro.cdma.default_numeric=310012
+#ro.cdma.default_alpha=Verizon
+ro.cdma.home.operator.alpha=Verizon
+ro.cdma.home.operator.numeric=310012
+gsm.operator.numeric=310012
 gsm.operator.iso-country=us
-gsm.operator.alpha=U.S. Cellular
+gsm.operator.alpha=U.S. Verizon
 ro.telephony.get_imsi_from_sim=true
+ro.cdma.homesystem=128,64
 
 # Retry Timer (USCC, MetroPCS)
 ro.gsm.data_retry_config=max_retries=infinite,0,0,60000,120000,480000,900000
+ro.cdma.data_retry_config=default_randomization=96 0000,960000,960000,960000,960000
 
 # Default Data Roaming (USCC, LRA)
 ro.com.android.dataroaming=true
@@ -37,6 +39,7 @@ dalvik.vm.dexopt-data-only=1
 telephony.sms.pseudo_multipart=1
 
 ro.config.vc_call_vol_steps=7
+ro.com.google.clientidbase=android-verizon
 
 # TWRP
 service.adb.root=1
