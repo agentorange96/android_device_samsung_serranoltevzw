@@ -1,6 +1,7 @@
 # Copyright (C) 2013-2016, The CyanogenMod Project
 # Copyright (C) 2017, The LineageOS Project
 
-Device configuration for Samsung Galaxy S4 Mini (US Cellular LTE model).
+Device configuration for Samsung Galaxy S4 Mini (SCH-i435L).
 
-WORK IN PROGRESS. WILL EAT YOUR CAT.
+Experimental: I'm not very experienced with this stuff yet. I don't recommended using this just yet.
+Big thanks to jlask who has put in most of this work for the U.S. Cellular version of the S4-Mini!
