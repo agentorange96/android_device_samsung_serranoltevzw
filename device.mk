@@ -16,13 +16,13 @@
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=SerranoLTEUSCRIL
+    ro.telephony.ril_class=SerranoLTEVZWRIL
 
 # Get non-open-source specific aspects
 # Call this BEFORE serrano-common        
-$(call inherit-product, vendor/samsung/serranolteusc/serranolteusc-vendor.mk)
+$(call inherit-product, vendor/samsung/serranoltevzw/serranoltevzw-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/serranolteusc/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/serranoltevzw/overlay
 
 # Inherit from serrano-common
 $(call inherit-product, device/samsung/serrano-common/serrano-common.mk)
